@@ -16,8 +16,130 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- === Intro === -->
+				<!-- Intro -->
+				<section data-background-gradient="linear-gradient(30deg, #478cbf, #414042)">
+					<h1>N'attendons plus!</h1>
+					<h2 class="text-5xl">
+						Pourquoi utiliser le moteur de jeu Godot en 2023
+					</h2>
+
+					<p class="text-4xl p-0 m-0">
+						Présentation par Adam Scott <br>
+						pour les Gaming Drinks Sherbrooke <br>
+						3 mai 2023
+					</p>
+
+					<p><a class="text-white" href="https://adamscott.studio">https://adamscott.studio</a></p>
+				</section>
+
+				<!-- Diapos dispo -->
+				<section>
+					<p class="text-7xl">
+						Présentation disponible sur
+					</p>
+					<p class="text-5xl p-0 m-0">
+						<a class="" href="https://adamscott.github.io/nattendonsplus/">https://adamscott.github.io/nattendonsplus/</a>
+					</p>
+				</section>
+
+				<!-- Qui suis-je -->
+				<section>
+					<h2>Qui suis-je?</h2>
+
+					<!-- Photo -->
+					<section>
+						<div class="grid grid-cols-12">
+							<div class="col-span-4">
+								<img 
+									class="fragment h-full object-cover"
+									src="assets/img/adam.jpg" 
+								/>
+							</div>
+
+							<div class="col-span-8 text-left text-3xl">
+								<h3 class="fragment">
+									Adam Scott
+								</h3>
+								<p class="fragment">
+									Originaire de Farnham, en Montérégie<br>
+									Habite à Sherbrooke
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Parcours -->
+					<section>
+						<h3>
+							Parcours pour le moins <span class="italic">atypique</span>...
+						</h3>
+						<ul>
+							<li class="fragment">Programmeur chez Frima Studio <span class="fragment">en 2010</span></li>
+							<li class="fragment">
+								Études en droit<span class="fragment">, devenir avocat<span class="fragment">, puis réaliser que ce n'est pas pour moi après 8 mois de pratique</span></span></li>
+							<li class="fragment">Développeur front-end/fullstack chez Leadfox, à Sherbrooke, depuis 2019</li>
+						</ul>
+					</section>
+					
+					<!-- Découverte de Godot -->
+					<section>
+						<h3 class="r-fit-text">
+							Découverte de Godot en 2006
+						</h3>
+					</section>
+
+					<!-- Première contribution -->
+					<section>
+						<h3 class="r-fit-text">
+							Première contribution en 2020
+						</h3>
+					</section>
+
+					<!-- Contributions actives -->
+					<section>
+						<h3 class="r-fit-text">
+							Contributions actives depuis août 2022
+						</h3>
+						<div class="fragment">
+							Plus grosse contribution, régler les références cycliques dans GDScript.
+						</div>
+					</section>
+					<section>
+						<div>
+							<img src="assets/img/cyclic.png" />
+						</div>
+					</section>
+
+					<!-- La twist -->
+					<section>
+						<h3 class="r-fit-text">Et puis, le 3 avril 2023...</h3>
+					</section>
+					<section>
+						<img src="assets/img/gdquest_chat.png" />
+					</section>
+					<section>
+						<img src="assets/img/gdquest_tweet.png" />
+					</section>
+				</section>
+
+				<!-- Glossaire -->
+				<section>
+					<h2>De quoi tu parles?</h2>
+
+					<section>
+						<h3 class="fragment">Moteur de jeu</h3>
+					</section>
+
+					<section>
+						<h3>Godot Engine</h3>
+						<ul>
+							<li class="fragment">Créé en 2007</li>
+							<li class="fragment">Code ouvert en février 2014 sous license MIT</li>
+							<li class="fragment">Version 4.0 lancée le 1er mars 2023</li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -30,11 +152,18 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
+				// hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+			  important: true
+			}
+		  </script>
 	</body>
 </html>
